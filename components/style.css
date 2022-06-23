@@ -15,14 +15,14 @@ colors{
 }
 
 body {
-    background-color: #E56B6F;
+    background-color: #DA4167;
 }
 
 fieldset {
     text-align: center;
     border: none;
-    background-color: #ffffff5e;
 }fieldset input{
+    border-radius: 20px;
     font-size: 1.5em;
     text-align: center;
     display: block;
@@ -41,26 +41,32 @@ fieldset {
 }
 
 footer {
+    position: relative;
+    bottom: 0;
     text-align: center;
     padding: 50px;
-    background-color: #ffffff7a;
+    background:linear-gradient(to bottom ,#DA4167, #524f4f7a) no-repeat;
 }footer a{
     line-height: 2em;
     font-size: 1.3em;
     text-decoration: none;
-    color: #B56576;
+    color: #631258;
 }
 
 #container-menu {
     line-height: 3em;
     padding: 10px;
     text-align: center;
-    background-color: #355070;
+    background-color: #8A1C7C;
 }
 
 .container {
     margin: auto;
+    margin-top: 20px;
     margin-bottom: 100px;
     padding: 20px;
     width: 70%;
+    background-color: #92D1C3;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #51746c8e;
 }
