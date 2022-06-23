@@ -1,0 +1,66 @@
+/*
+colors{
+    #6D597A azul
+    #355070 roxo
+    #B56576 vermelho arroxeado
+    #E56B6F vermelho
+    #EAAC8B cor de bosta
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: #E56B6F;
+}
+
+fieldset {
+    text-align: center;
+    border: none;
+    background-color: #ffffff5e;
+}fieldset input{
+    font-size: 1.5em;
+    text-align: center;
+    display: block;
+    margin: auto;
+    line-height: 2em;
+    margin-top: 10px;
+    border: none;
+    width: 90%;
+}fieldset button {
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    color: red;
+    font-size: 1.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #ffffff7a;
+}footer a{
+    line-height: 2em;
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #B56576;
+}
+
+#container-menu {
+    line-height: 3em;
+    padding: 10px;
+    text-align: center;
+    background-color: #355070;
+}
+
+.container {
+    margin: auto;
+    margin-bottom: 100px;
+    padding: 20px;
+    width: 70%;
+}

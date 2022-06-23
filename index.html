@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/components/style.css">
-    <title>Password Generator</title>
+    <title>Gen Pass</title>
 </head>
 <body>
-    <header></header>
+    <header id="container-menu">
+        <h1>Gen Pass</h1>
+        <p>Cansado de senhas 12345678?</p>
+    </header>
     <section class="container">
-        <div class="input-number">
+        <fieldset>
             <input type="text" id="password-gen">
-            <input type="number" id="input-number">
-        </div>
-        <button id="button-press">Gerar</button>
+            <input type="range" id="input-number" min="1" max="50">
+            <button id="button-press">Gerar</button>
+        </fieldset>
+        
     </section>
-    <footer></footer>
+    <footer>
+        <h4>Todos os direitos reservados <br><a href="">@pvd_alves.fe</a></h4>
+    </footer>
     <script src="components/Password-Generator.js"></script>
 </body>
 </html>

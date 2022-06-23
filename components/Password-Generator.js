@@ -1,9 +1,11 @@
-var 
+var numberEl = document.getElementById('input-number')
+var buttonEl = document.getElementById('button-press')
+var passwordEl = document.getElementById('password-gen')
 
 
 var list_lowercase = 'abcdefghijklmnopqrstuvwxyz'
 var list_uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-var list_numbers_pontuation = '123456789!@#$%&*-_'
+var list_numbers_pontuation = `123456789!&@#$%*-_`
 
 
 function choice_list(list){
@@ -16,27 +18,31 @@ function choice_list(list){
 }
 
 
-function PasswordGenerator(number_choice=8){
+function PasswordGenerator(){
     /*
     Aqui gera a senha em si
     */
-    var password = new Array() //armazena a senha gerada
-    
-    for (let i = 0; i < number_choice; i++){
 
-        var rng = Math.floor(Math.random() * 4) //para que crie senhas um pouco memoráveis
+    var password = new Array()
+    
+    for (let i = 0; i < numberEl.value; i++){
+        var rng = Math.floor(Math.random() * 4); //para que crie senhas um pouco memoráveis
         
         if (rng == 0){
             password += choice_list(list_lowercase)
         }
         
-       else if (rng == 1 || rng == 2){
+        if (rng == 1 || rng == 2){
             password += choice_list(list_uppercase)
         }
         
-        else{
+        if (rng == 3){
             password += choice_list(list_numbers_pontuation)
         }
     }
-    return password
+    
+    passwordEl.value = password
+    
 }
+
+buttonEl.addEventListener('click', PasswordGenerator)
