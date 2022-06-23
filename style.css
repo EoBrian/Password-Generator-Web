@@ -34,10 +34,17 @@ fieldset {
 }fieldset button {
     width: 30%;
     margin: auto;
+    border-radius: 20px;
     margin-top: 10px;
     padding: 10px;
-    color: red;
+    color: #000;
+    background-color: #fbff00;
     font-size: 1.5em;
+    transition: 1s;
+    cursor: pointer;
+}fieldset button:hover {
+    background-color: #000;
+    color: #fbff00;
 }
 
 footer {
