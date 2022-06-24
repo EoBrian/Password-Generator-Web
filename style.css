@@ -26,8 +26,20 @@ fieldset {
     float: left;
     text-indent: 10px;
 }fieldset button {
-    width: 20%;
+    font-weight: bold;
+    width: 60px;
+    height: 60px;
+    font-size: 100%;
+    border: none;
+    border-radius: 50%;
     float: right;
+    color: #6e1d8f;
+    background-color: #c9c8c87a;
+    box-shadow: 1px 1px 5px  #6b6a6a9a;
+    transition: 1s;
+    cursor: pointer;
+}fieldset button:hover{
+    box-shadow: 1px 1px 5px  #6e1d8f;
 }
 
 footer {
