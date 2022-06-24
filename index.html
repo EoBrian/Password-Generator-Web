@@ -15,26 +15,33 @@
   <article>
 
     <section class="container">
-      <fieldset>
+      <fieldset class="flexbox">
         <input type="text" id="password-gen">
-        <button id="button-press">Gerar</button>
       </fieldset>
+      <div id="progress-bar_"></div>
     </section>
 
     <section class="container">
-      <section>
-        <h2>Personalize sua senha</h2>
-        <input type="number" id="input-number-2" min="1" max="50">
-        <input type="range" id="input-number" min="1" max="50">
-      </section>
-      <section>
+        <fieldset class="password-mod">
+          <legend><h2>Personalize sua senha</h2></legend>
+          <section>
+             
+            <input type="number" id="input-number-2" min="4" max="50">
+            <input type="range" id="input-number" min="4" max="50">
+          </section>
 
-      </section>
-      <section>
-
-      </section>
+          <section>
+            <label for="modificar">todos os caracters</label>
+            <input type="radio" name="modificar" id="modificar" checked>
+            <label for="modificar">apenas letras</label>
+            <input type="radio" name="modificar" id="modificar">
+          </section>    
+        </fieldset>
     </section>
 
+    <section class="center">
+      <button id="button-press">Gerar</button>
+    </section>
   </article>
   <footer>
     <h4>Todos os direitos reservados <br><a target="_blank" href="https://www.instagram.com/pvd_alves.fe/">@pvd_alves.fe</a></h4>
