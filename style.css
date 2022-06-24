@@ -53,6 +53,27 @@ fieldset.flexbox{
 }
 /*--------------------------------------------*/
 
+/*---------------container-box----------------*/
+#box-1, #box-2{
+    text-align: center;
+    width: 48%;
+    border: 1px solid red;
+    display: inline-block;
+    float: left;
+}#box-1 #input-number{
+    width: 78%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}#box-1 #input-number-2{
+    width: 40px;
+    text-align: center;
+    line-height: 2em;
+    height: 30px;
+    margin: 10px;
+    margin-top: 10px;
+}
+/*--------------------------------------------*/
+
 /*---------button 'GERAR' design------------*/
 button {
     font-weight: bold;

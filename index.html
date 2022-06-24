@@ -24,17 +24,32 @@
     <section class="container">
         <fieldset class="password-mod">
           <legend><h2>Personalize sua senha</h2></legend>
-          <section>
-             
+
+          <section id="box-1">
+            <h3>quantidade de caracters:</h3>        
             <input type="number" id="input-number-2" min="4" max="50">
             <input type="range" id="input-number" min="4" max="50">
           </section>
 
-          <section>
-            <label for="modificar">todos os caracters</label>
-            <input type="radio" name="modificar" id="modificar" checked>
-            <label for="modificar">apenas letras</label>
-            <input type="radio" name="modificar" id="modificar">
+          <section id="box-2">
+            <h3></h3>
+            <label for="radio-1">todos os caracters</label>
+            <input type="radio" name="radio" id="radio-1" checked>
+            <label for="radio-2">apenas letras</label>
+            <input type="radio" name="radio" id="radio-2">
+            <section>
+              <label for="caselower">letras minusculas</label>
+              <input type="checkbox" name="caselower" id="caselower">
+
+              <label for="uppercase">letras maiusculas</label>
+              <input type="checkbox" name="uppercase" id="uppercase">
+
+              <label for="numbercase">numeros</label>
+              <input type="checkbox" name="numbercase" id="numbercase">
+
+              <label for="simbolos">simbolos</label>
+              <input type="checkbox" name="" id="">
+            </section>
           </section>    
         </fieldset>
     </section>
