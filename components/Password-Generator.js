@@ -1,4 +1,5 @@
 var numberEl = document.getElementById('input-number')
+
 var buttonEl = document.getElementById('button-press')
 var passwordEl = document.getElementById('password-gen')
 

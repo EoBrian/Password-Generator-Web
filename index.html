@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Gen Pass</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gen Password</title>
 </head>
 <body>
-    <header id="container-menu">
-        <h1>Gen Pass</h1>
-        <p>Cansado de senhas 12345678?</p>
-    </header>
+  <header id="container-menu">
+    <h1>Gen Password</h1>
+    <p>Cansado de senhas 12345678?</p>
+  </header>
+  <article>
+
     <section class="container">
-        <fieldset>
-            <input type="text" id="password-gen">
-            <input type="range" id="input-number" min="1" max="50">
-            <button id="button-press">Gerar</button>
-        </fieldset>
-        
+      <fieldset>
+        <input type="text" id="password-gen">
+        <button id="button-press">Gerar</button>
+      </fieldset>
     </section>
-    <footer>
-        <h4>Todos os direitos reservados <br><a target="_blank" href="https://www.instagram.com/pvd_alves.fe/">@pvd_alves.fe</a></h4>
-    </footer>
-    <script src="components/Password-Generator.js"></script>
+
+    <section class="container">
+      <section>
+        <h2>Personalize sua senha</h2>
+        <input type="number" id="input-number-2" min="1" max="50">
+        <input type="range" id="input-number" min="1" max="50">
+      </section>
+      <section>
+
+      </section>
+      <section>
+
+      </section>
+    </section>
+
+  </article>
+  <footer>
+    <h4>Todos os direitos reservados <br><a target="_blank" href="https://www.instagram.com/pvd_alves.fe/">@pvd_alves.fe</a></h4>
+  </footer>
+  <script src="components/Password-Generator.js"></script>
 </body>
 </html>
