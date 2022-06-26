@@ -43,7 +43,7 @@ function PasswordGenerator(){
     var password = new Array()
     
     for (let i = 0; i < numberEl.value; i++){
-        var rng = Math.floor(Math.random() * 4); //para que crie senhas um pouco memoráveis
+        var rng = Math.floor(Math.random() * 4) //para que crie senhas um pouco memoráveis
         
         if (rng == 0){
             password += choice_list(list_lowercase)
