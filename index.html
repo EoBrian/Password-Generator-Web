@@ -3,55 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <title>Gen Password</title>
 </head>
 <body>
-  <header id="container-menu">
+  <header id="container-menu" class="block">
     <h1>Gen Password</h1>
     <p>Cansado de senhas 12345678?</p>
   </header>
   <article>
 
-    <section class="container">
+    <section class="container block">
       <fieldset class="flexbox">
         <input type="text" id="password-gen">
       </fieldset>
       <div id="progress-bar_"></div>
     </section>
+    
+    <section class="columns">
 
-    <section class="container">
-        <fieldset class="password-mod">
-          <legend><h2>Personalize sua senha</h2></legend>
+      <div class="column is-5 box">
+        <h2>Personalize sua senha</h2>
+        <div>
+          <h3>quantidade de caracters:</h3>        
+          <input type="number" id="input-number-2" min="4" max="50">
+          <input type="range" id="input-number" min="4" max="50">
+        </div>
+      </div>
 
-          <section id="box-1">
-            <h3>quantidade de caracters:</h3>        
-            <input type="number" id="input-number-2" min="4" max="50">
-            <input type="range" id="input-number" min="4" max="50">
-          </section>
+      <div class="column is-5 box">
+        <div>
+          <h3></h3>
+          <label for="radio-1">todos os caracters</label>
+          <input type="radio" name="radio" id="radio-1" checked>
+          <label for="radio-2">apenas letras</label>
+          <input type="radio" name="radio" id="radio-2">
 
-          <section id="box-2">
-            <h3></h3>
-            <label for="radio-1">todos os caracters</label>
-            <input type="radio" name="radio" id="radio-1" checked>
-            <label for="radio-2">apenas letras</label>
-            <input type="radio" name="radio" id="radio-2">
-            <section>
-              <label for="caselower">letras minusculas</label>
-              <input type="checkbox" name="caselower" id="caselower">
+          <div>
+            <label for="caselower">letras minusculas</label>
+            <input type="checkbox" name="caselower" id="caselower">
 
-              <label for="uppercase">letras maiusculas</label>
-              <input type="checkbox" name="uppercase" id="uppercase">
+            <label for="uppercase">letras maiusculas</label>
+            <input type="checkbox" name="uppercase" id="uppercase">
 
-              <label for="numbercase">numeros</label>
-              <input type="checkbox" name="numbercase" id="numbercase">
+            <label for="numbercase">numeros</label>
+            <input type="checkbox" name="numbercase" id="numbercase">
 
-              <label for="simbolos">simbolos</label>
-              <input type="checkbox" name="simbolos" id="simbolos">
-            </section>
-          </section>    
-        </fieldset>
+            <label for="simbolos">simbolos</label>
+            <input type="checkbox" name="simbolos" id="simbolos">
+          </div>
+        </div>    
+      </div>
     </section>
 
     <section class="center">
