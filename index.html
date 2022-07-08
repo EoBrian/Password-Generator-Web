@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
   <title>Gen Password</title>
 </head>
 <body>
@@ -22,9 +21,9 @@
       <div id="progress-bar_"></div>
     </section>
     
-    <section class="columns">
+    <section class="container">
 
-      <div class="column is-5 box">
+      <div class="box">
         <h2>Personalize sua senha</h2>
         <div>
           <h3>quantidade de caracters:</h3>        
@@ -33,28 +32,39 @@
         </div>
       </div>
 
-      <div class="column is-5 box">
-        <div>
-          <h3></h3>
-          <label for="radio-1">todos os caracters</label>
-          <input type="radio" name="radio" id="radio-1" checked>
-          <label for="radio-2">apenas letras</label>
-          <input type="radio" name="radio" id="radio-2">
+      <div class="box">
+        <form>
+          <div>
+            <label for="radio-1">todos os caracters</label>
+            <input type="radio" name="radio" id="radio-1" checked>
+          </div>
+          <div>
+            <label for="radio-2">apenas letras</label>
+            <input type="radio" name="radio" id="radio-2">
+          </div>
 
           <div>
-            <label for="caselower">letras minusculas</label>
-            <input type="checkbox" name="caselower" id="caselower">
+            <div>
+              <label for="caselower">letras minusculas</label>
+              <input type="checkbox" name="caselower" id="lowercase">
+            </div>
 
-            <label for="uppercase">letras maiusculas</label>
-            <input type="checkbox" name="uppercase" id="uppercase">
+            <div>
+              <label for="uppercase">letras maiusculas</label>
+              <input type="checkbox" name="uppercase" id="uppercase">
+            </div>
 
+           <div>
             <label for="numbercase">numeros</label>
             <input type="checkbox" name="numbercase" id="numbercase">
+           </div>
 
-            <label for="simbolos">simbolos</label>
-            <input type="checkbox" name="simbolos" id="simbolos">
+            <div>
+              <label for="simbolos">simbolos</label>
+              <input type="checkbox" name="simbolos" id="simbolos">
+            </div>
           </div>
-        </div>    
+        </form>    
       </div>
     </section>
 
@@ -63,7 +73,7 @@
     </section>
   </article>
   <footer>
-    <h4>Todos os direitos reservados <br><a target="_blank" href="https://www.instagram.com/pvd_alves.fe/">@pvd_alves.fe</a></h4>
+    <h4>Todos os direitos reservados <br><a target="_blank" href="https://www.instagram.com/eobrian_dev/">@eobrian_dev</a></h4>
   </footer>
   <script src="components/Password-Generator.js"></script>
 </body>

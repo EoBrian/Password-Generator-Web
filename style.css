@@ -41,7 +41,7 @@ fieldset.flexbox{
     overflow: hidden;
     width: 60%;
     padding: 20px;
-    margin: auto;
+    margin: 0 auto;
     margin-top: 20px;
     background-color: #fff;
     border-radius: 4px;
@@ -50,6 +50,12 @@ fieldset.flexbox{
 
 .box {
     margin: auto;
+}
+
+@media screen and (max-width: 568px) {
+    .container {
+        width: 90%;
+    }
 }
 
 /*---------button 'GERAR' design------------*/
