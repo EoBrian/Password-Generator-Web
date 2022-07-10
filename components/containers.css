@@ -1,0 +1,29 @@
+.box input[type=range]{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.box-second {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.pass-settings {
+    width: 50%;
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.radios-buttons {
+    line-height: 2em;
+}
+
+/*mobile responsive*/
+@media screen and (max-width:568px) {
+    .pass-settings {
+        width: 100%;
+        border-top: 2px solid rgb(213, 240, 213);
+    }
+}

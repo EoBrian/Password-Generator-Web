@@ -3,13 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+
+  <link rel="stylesheet" href="/components/default_settings.css">
+  <link rel="stylesheet" href="/components/containers.css">
   <link rel="stylesheet" href="style.css">
-  <title>Gen Password</title>
+  
+  
+  <title>New Pass</title>
 </head>
 <body>
   <header id="container-menu" class="block">
-    <h1>Gen Password</h1>
+    <h1>New Pass</h1>
     <p>Cansado de senhas 12345678?</p>
   </header>
   <article>
@@ -26,44 +32,50 @@
       <div class="box">
         <h2>Personalize sua senha</h2>
         <div>
-          <h3>quantidade de caracters:</h3>        
-          <input type="number" id="input-number-2" min="4" max="50">
-          <input type="range" id="input-number" min="4" max="50">
+          <input type="range" class="input_pass" id="input-number" min="4" max="50">
         </div>
       </div>
 
-      <div class="box">
+      <div class="box-second">
         <form>
-          <div>
-            <label for="radio-1">todos os caracters</label>
-            <input type="radio" name="radio" id="radio-1" checked>
-          </div>
-          <div>
-            <label for="radio-2">apenas letras</label>
-            <input type="radio" name="radio" id="radio-2">
-          </div>
-
-          <div>
+          <section class="radios-buttons pass-settings">
             <div>
-              <label for="caselower">letras minusculas</label>
-              <input type="checkbox" name="caselower" id="lowercase">
+              <label for="radio-1">todos os caracters</label>
+              <input type="radio" name="radio" id="radio-1" checked>
             </div>
-
             <div>
-              <label for="uppercase">letras maiusculas</label>
-              <input type="checkbox" name="uppercase" id="uppercase">
+              <label for="radio-2">apenas letras</label>
+              <input type="radio" name="radio" id="radio-2">
             </div>
+  
+          </section>
 
-           <div>
-            <label for="numbercase">numeros</label>
-            <input type="checkbox" name="numbercase" id="numbercase">
-           </div>
-
-            <div>
-              <label for="simbolos">simbolos</label>
-              <input type="checkbox" name="simbolos" id="simbolos">
-            </div>
-          </div>
+          <section class="checkbox-buttons pass-settings">
+        
+              <div>
+                <label for="caselower">letras minusculas</label>
+                <input type="checkbox" name="caselower" id="lowercase">
+              </div>
+  
+              <div>
+                <label for="uppercase">letras maiusculas</label>
+                <input type="checkbox" name="uppercase" id="uppercase">
+              </div>
+  
+             <div>
+              <label for="numbercase">numeros</label>
+              <input type="checkbox" name="numbercase" id="numbercase">
+             </div>
+  
+              <div>
+                <label for="simbolos">simbolos</label>
+                <input type="checkbox" name="simbolos" id="simbolos">
+              </div>
+           
+          </section>
+          
+          <div class="clear"></div>
+          
         </form>    
       </div>
     </section>
@@ -72,9 +84,12 @@
       <button id="button-press">Gerar</button>
     </section>
   </article>
+
   <footer>
     <h4>Todos os direitos reservados <br><a target="_blank" href="https://www.instagram.com/eobrian_dev/">@eobrian_dev</a></h4>
   </footer>
+
   <script src="components/Password-Generator.js"></script>
+
 </body>
 </html>

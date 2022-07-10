@@ -1,5 +1,5 @@
-var numberEl = document.getElementById('input-number')
-var numberEl_2 = document.getElementById('input-number-2')
+//valores dos inputs, quantidades de caracters
+const numberEl = document.getElementById('input-number')
 
 var buttonEl = document.getElementById('button-press')
 var passwordEl = document.getElementById('password-gen')
@@ -17,7 +17,8 @@ const radio_2 = document.getElementById('radio-2')
 //Array cases
 var list_lowercase = 'abcdefghijklmnopqrstuvwxyz'
 var list_uppercase = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
-var list_numbers_pontuation = `123456789!&@#$%*-_`
+var list_numbers = `123456789`
+var list_pontuation = '!&@#$%*-_'
 
 
 function choice_list(list){
@@ -53,8 +54,16 @@ function PasswordGenerator(){
     var password = new Array()
     
     for (let i = 0; i < numberEl.value; i++){
-        var rng = Math.floor(Math.random() * 4) //para que crie senhas um pouco memoráveis
+        var rng = 0 //para que crie senhas um pouco memoráveis
         
+        if (radio_2.checked == true) {
+            rng = Math.floor(Math.random() * 3)
+            only_numbercase.disabled 
+        } else {
+            rng = Math.floor(Math.random() * 5)
+        }
+
+
         if (rng == 0){
             password += choice_list(list_lowercase)
         }
@@ -64,20 +73,16 @@ function PasswordGenerator(){
         }
         
         if (rng == 3){
-            password += choice_list(list_numbers_pontuation)
+            password += choice_list(list_numbers)
+        }
+
+        if (rng == 4){
+            password += choice_list(list_pontuation)
         }
     }
     
     passwordEl.value = password
     
 }
-
-//show number similar
-if (numberEl.value < numberEl_2.value) {
-    numberEl.value = numberEl_2.value
-}else{
-    numberEl.value = numberEl_2.value
-}
-
 
 buttonEl.addEventListener('click', PasswordGenerator)
