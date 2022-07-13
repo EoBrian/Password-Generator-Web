@@ -78,6 +78,14 @@ fieldset.flexbox{
 }
 
 @media screen and (max-width: 568px) {
+    #container-menu .nav-bar {
+        margin: 10px auto;
+    }
+
+    #container-menu {
+        flex-direction: column;
+    }
+
     .container {
         width: 90%;
     }
