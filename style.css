@@ -1,5 +1,42 @@
 body {
+    height: 100vh;
     background-color: #f2f7f8;
+}
+
+/*menu navegation area*/
+#container-menu {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    background-color: #6e1d8f;
+}
+
+#container-menu #logo{
+    display: block;
+    margin-right: auto;
+}
+
+#container-menu .nav-bar{
+    margin-left: auto;
+}
+
+#container-menu .nav-bar ul {
+    display: flex;
+}
+
+#container-menu .nav-bar ul a {
+    color: #6e1d8f;
+    background-color: #fff;
+    padding: 8px;
+    margin-right: 3px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+}#container-menu .nav-bar ul a:hover {
+    transition: 500ms;
+    position: relative;
+    bottom: 5px;
+    background-color: #6e1d8f;
+    color: #fff;
 }
 
 /*---------------password area----------------*/
@@ -25,12 +62,6 @@ fieldset.flexbox{
 
 
 /*------------------ containers -----------------*/
-#container-menu {
-    padding: 30px;
-    text-align: center;
-    background-color: #6e1d8f;
-}
-
 .container {
     overflow: hidden;
     width: 60%;
