@@ -3,6 +3,13 @@ body {
     background-color: #f2f7f8;
 }
 
+.flexbox #copy-button {
+    position: absolute;
+    right: -20px;
+    top: 12px;
+    
+}
+
 /*menu navegation area*/
 #container-menu {
     padding: 30px;
@@ -41,6 +48,7 @@ body {
 
 /*---------------password area----------------*/
 fieldset.flexbox{
+    position: relative;
     text-align: center;
     border: none;
 }fieldset.flexbox input{

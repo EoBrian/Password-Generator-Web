@@ -58,7 +58,8 @@ function PasswordGenerator(){
         
         if (radio_2.checked == true) {
             rng = Math.floor(Math.random() * 3)
-            only_numbercase.disabled 
+            
+
         } else {
             rng = Math.floor(Math.random() * 5)
         }
@@ -86,3 +87,11 @@ function PasswordGenerator(){
 }
 
 buttonEl.addEventListener('click', PasswordGenerator)
+
+//copy password---------------------------
+const copy_button = document.getElementById('copy-button')
+
+copy_button.addEventListener('click', function CopyPassword(){
+    navigator.clipboard.writeText(passwordEl.value)
+    window.alert('Senha copiada!')
+})
