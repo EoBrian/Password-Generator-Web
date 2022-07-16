@@ -24,6 +24,7 @@
 @media screen and (max-width:568px) {
     .pass-settings {
         width: 100%;
-        border-top: 2px solid rgb(213, 240, 213);
+        border-top: 2px solid #ccc;
+        padding-top: 5px;
     }
 }

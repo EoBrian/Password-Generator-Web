@@ -26,7 +26,7 @@
 
     <nav class="nav-bar">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a id="active" href="index.html">Home</a></li>
         <li><a href="security.html">Security</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="">Contato</a></li>
@@ -59,50 +59,36 @@
       <div class="box">
         <h2>Personalize sua senha</h2>
         <div>
+          <label for="input-number">Tamanho da senha</label>
           <input type="range" class="input_pass" id="input-number" min="4" max="50">
         </div>
       </div>
 
       <div class="box-second">
         <form>
+
+
           <section class="radios-buttons pass-settings">
+
             <div>
               <label for="radio-1">todos os caracters</label>
               <input type="radio" name="radio" id="radio-1" checked>
             </div>
+
             <div>
               <label for="radio-2">apenas letras</label>
               <input type="radio" name="radio" id="radio-2">
             </div>
-  
+            
+            <div>
+              <label for="only-numbers">apenas números</label>
+              <input type="radio" name="radio" id="only-numbers">
+            </div>
           </section>
 
-          <section class="checkbox-buttons pass-settings">
-        
-              <div>
-                <label for="caselower">letras minusculas</label>
-                <input type="checkbox" name="caselower" id="lowercase">
-              </div>
-  
-              <div>
-                <label for="uppercase">letras maiusculas</label>
-                <input type="checkbox" name="uppercase" id="uppercase">
-              </div>
-  
-             <div>
-              <label for="numbercase">numeros</label>
-              <input type="checkbox" name="numbercase" id="numbercase">
-             </div>
-  
-              <div>
-                <label for="simbolos">simbolos</label>
-                <input type="checkbox" name="simbolos" id="simbolos">
-              </div>
-           
-          </section>
-          
           <div class="clear"></div>
           
+
         </form>    
       </div>
     </section>

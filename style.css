@@ -1,3 +1,7 @@
+:root {
+    --bg-color-primary: #6e1d8f;
+}
+
 body {
     height: 100vh;
     background-color: #f2f7f8;
@@ -15,7 +19,7 @@ body {
     padding: 30px;
     display: flex;
     align-items: center;
-    background-color: #6e1d8f;
+    background-color: var(--bg-color-primary);
 }
 
 #container-menu #logo{
@@ -32,7 +36,7 @@ body {
 }
 
 #container-menu .nav-bar ul a {
-    color: #6e1d8f;
+    color: var(--bg-color-primary);
     background-color: #fff;
     padding: 8px;
     margin-right: 3px;
@@ -42,8 +46,13 @@ body {
     transition: 500ms;
     position: relative;
     bottom: 5px;
-    background-color: #6e1d8f;
+    background-color: var(--bg-color-primary);
     color: #fff;
+}
+
+#container-menu .nav-bar ul #active {
+    color: #fff;
+    background-color: var(--bg-color-primary);
 }
 
 /*---------------password area----------------*/
@@ -82,7 +91,24 @@ fieldset.flexbox{
 }
 
 .box {
-    margin: auto;
+    display: flex;
+    font-size: 1.3em;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.container .box h2 {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 4px;
+    width: 300px;
+    
+}
+
+.container .box-second {
+    
 }
 
 @media screen and (max-width: 568px) {
@@ -103,6 +129,9 @@ fieldset.flexbox{
     .container {
         width: 80%;
     }
+    .box {
+        font-size: 1em;
+    }
 }
 
 /*---------button 'GERAR' design------------*/
@@ -113,13 +142,13 @@ button {
     font-size: 100%;
     border: none;
     border-radius: 50%;
-    color: #6e1d8f;
+    color: var(--bg-color-primary);
     background-color: #c9c8c87a;
     box-shadow: 1px 1px 5px  #6b6a6a9a;
     transition: 1s;
     cursor: pointer;
 }button:hover{
-    box-shadow: 1px 1px 5px  #6e1d8f;
+    box-shadow: 1px 1px 5px  var(--bg-color-primary);
 }
 section.center{
     margin: auto;
@@ -133,9 +162,9 @@ footer {
     clear: both;
     text-align: center;
     padding: 68px;
-}footer a{
+}footer h4{
     line-height: 2em;
     font-size: 1.3em;
     text-decoration: none;
-    color: #631258;
+    color: var(--bg-color-primary);
 }
