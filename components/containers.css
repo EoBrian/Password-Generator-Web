@@ -4,25 +4,29 @@
 }
 
 .box-second {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    width: 100%;
+}
+
+.box-second div {
+    margin: 0 auto;
 }
 
 .pass-settings {
-    width: 50%;
-    float: left;
-    margin-top: 10px;
-    text-align: center;
-}
-
-.radios-buttons {
-    line-height: 2em;
+    font-weight: 300;
+    font-size: 1.3em;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 /*mobile responsive*/
 @media screen and (max-width:568px) {
+    .box-second div {
+        width: 100%;
+    }
     .pass-settings {
+        margin: 10px auto;
         width: 100%;
         border-top: 2px solid #ccc;
         padding-top: 5px;

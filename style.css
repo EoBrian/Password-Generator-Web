@@ -3,7 +3,6 @@
 }
 
 body {
-    height: 100vh;
     background-color: #f2f7f8;
 }
 
@@ -42,10 +41,8 @@ body {
     margin-right: 3px;
     border-radius: 10px;
     border: 1px solid #fff;
-}#container-menu .nav-bar ul a:hover {
+}#container-menu .nav-bar ul a:hover{
     transition: 500ms;
-    position: relative;
-    bottom: 5px;
     background-color: var(--bg-color-primary);
     color: #fff;
 }
@@ -91,10 +88,8 @@ fieldset.flexbox{
 }
 
 .box {
-    display: flex;
     font-size: 1.3em;
     margin: 0 auto;
-    align-items: center;
 }
 
 .container .box h2 {
@@ -104,10 +99,6 @@ fieldset.flexbox{
     border-bottom: 2px solid #ccc;
     padding-bottom: 4px;
     width: 300px;
-    
-}
-
-.container .box-second {
     
 }
 
