@@ -22,9 +22,14 @@
 
 /*mobile responsive*/
 @media screen and (max-width:568px) {
+    article .container {
+        width: 100%;
+    }
+
     .box-second div {
         width: 100%;
     }
+    
     .pass-settings {
         margin: 10px auto;
         width: 100%;

@@ -1,18 +1,15 @@
 //valores dos inputs, quantidades de caracters
 const numberEl = document.getElementById('input-number')
+const numberEl_2 = document.getElementById('input-number-2')
 
 var buttonEl = document.getElementById('button-press')
 var passwordEl = document.getElementById('password-gen')
 
-//checkbox
-const only_lowercase = document.getElementById('lowercase')
-const only_uppercase = document.getElementById('uppercase')
-const only_numbercase = document.getElementById('numbercase')
-const only_simbolos = document.getElementById('simbolos')
 
 //radio buttons
 const radio_1 = document.getElementById('radio-1')
 const radio_2 = document.getElementById('radio-2')
+const radio_3 = document.getElementById('only-numbers')
 
 //Array cases
 var list_lowercase = 'abcdefghijklmnopqrstuvwxyz'
@@ -59,6 +56,10 @@ function PasswordGenerator(){
         if (radio_2.checked == true) {
             rng = Math.floor(Math.random() * 3)
             
+        }
+        else if (radio_3.checked == true) {
+
+            rng = 3 
 
         } else {
             rng = Math.floor(Math.random() * 5)
@@ -95,3 +96,14 @@ copy_button.addEventListener('click', function CopyPassword(){
     navigator.clipboard.writeText(passwordEl.value)
     window.alert('Senha copiada!')
 })
+
+
+//input = input
+function changeInputNumber() {
+
+    numberEl_2.value = numberEl.value
+    PasswordGenerator()
+
+}
+
+numberEl.addEventListener('change', changeInputNumber)
