@@ -28,7 +28,8 @@
     flex-wrap: wrap;
     padding: 10px;
     margin: 10px;
-    border: 1px solid;
+    border: 2px solid #ccc;
+    border-radius: 5px;
 }
 
 .box .input-numbers label {
@@ -43,13 +44,20 @@
     align-self: center;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
 .box .input-numbers div input[type=number] {
-    height: 50px;
-    width: 50px;
+    appearance: text;
+    height: 30px;
+    width: 30px;
     text-align: center;
     font-size: 1em;
-    padding-left: 10px;
-
+    margin-right: 10px;
 }
 
 /*mobile responsive*/
