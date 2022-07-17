@@ -150,12 +150,19 @@ section.center{
 
 /*---------------footer---------------*/
 footer {
+    display: flex;
+    align-items: center;
     clear: both;
     text-align: center;
     padding: 68px;
 }footer h4{
+    margin-left: auto;
     line-height: 2em;
     font-size: 1.3em;
     text-decoration: none;
     color: var(--bg-color-primary);
+}
+
+footer img {
+    width: 30px;
 }

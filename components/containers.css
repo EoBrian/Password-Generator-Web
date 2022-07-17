@@ -20,6 +20,38 @@
     margin: 0 auto;
 }
 
+
+/*input-numbers*/
+.box .input-numbers {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+}
+
+.box .input-numbers label {
+    width: 50%;
+}
+
+.box .input-numbers div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+
+.box .input-numbers div input[type=number] {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 1em;
+    padding-left: 10px;
+
+}
+
 /*mobile responsive*/
 @media screen and (max-width:568px) {
     article .container {
@@ -29,11 +61,15 @@
     .box-second div {
         width: 100%;
     }
-    
+
     .pass-settings {
         margin: 10px auto;
         width: 100%;
         border-top: 2px solid #ccc;
         padding-top: 5px;
+    }
+
+    .box .input-numbers .w-100 {
+        width: 100%;
     }
 }

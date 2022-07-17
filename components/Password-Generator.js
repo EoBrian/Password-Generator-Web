@@ -106,4 +106,15 @@ function changeInputNumber() {
 
 }
 
+
+function changeInputNumber_2() {
+
+    numberEl.value = numberEl_2.value 
+    PasswordGenerator()
+
+}
+
+
 numberEl.addEventListener('change', changeInputNumber)
+
+numberEl_2.addEventListener('change', changeInputNumber_2)
