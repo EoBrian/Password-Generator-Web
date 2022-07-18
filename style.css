@@ -118,9 +118,13 @@ fieldset.flexbox{
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 80%;
+        width: 90%;
     }
     .box {
+        font-size: 1.5em;
+    }
+
+    .container .box h2 {
         font-size: 1em;
     }
 }
@@ -163,6 +167,3 @@ footer {
     color: var(--bg-color-primary);
 }
 
-footer img {
-    width: 30px;
-}
