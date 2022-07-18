@@ -1,5 +1,4 @@
 .box input[type=range]{
-    margin-top: 10px;
     width: 100%;
 }
 
@@ -22,7 +21,7 @@
 
 
 /*input-numbers*/
-.box .input-numbers {
+.input-numbers {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -54,7 +53,7 @@ input::-webkit-inner-spin-button {
 .box .input-numbers div input[type=number] {
     appearance: text;
     height: 30px;
-    width: 30px;
+    width: 40px;
     text-align: center;
     font-size: 1em;
     margin-right: 10px;
@@ -71,8 +70,6 @@ input::-webkit-inner-spin-button {
     }
 
     .pass-settings {
-        margin: 10px auto;
-        width: 100%;
         border-top: 2px solid #ccc;
         padding-top: 5px;
     }
