@@ -54,7 +54,7 @@ buttonEl.addEventListener('click',PasswordGenerator)
 const copy_button=document.getElementById('copy-button')
 copy_button.addEventListener('click',function CopyPassword(){
     passwordEl.value.select()
-    navigator.clipboard.write("copy")
+    document.execCommand("copy")
     window.alert('Senha copiada!')
 })
 
@@ -68,5 +68,5 @@ function changeInputNumber_2(){
     PasswordGenerator()
 }
 
-numberEl.addEventListener('change',changeInputNumber)
-numberEl_2.addEventListener('change',changeInputNumber_2)
+numberEl.addEventListener("change",changeInputNumber)
+numberEl_2.addEventListener("change" ,changeInputNumber_2)
